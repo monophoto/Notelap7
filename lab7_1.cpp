@@ -33,9 +33,22 @@ string func3(string x){
 	return y;	
 }
 
+string Palindrome(string x, string y){
+	if(x == y){
+			return "Yes";
+		}else{
+			return "No";
+		}
+	}
+	
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+	string text;
+    cout << "Input text: ";
+	cin >> text;
+	string retext = func1(text);
+    cout << "Reversed text: " << retext << endl;
+	string T1 = func3(text);
+	string T2 = func3(retext);
+    cout << "Palindrome: " << Palindrome(T1, T2);
     return 0;
 }
